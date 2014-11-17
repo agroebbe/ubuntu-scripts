@@ -1,4 +1,10 @@
 * update ubuntu LTS to newer:
 https://www.virtualmin.com/documentation/system/os/ubuntu-precise-to-trusty
 
+* gedit: run line/selection in command terminal
+--- be aware to adapt keymap: https://code.google.com/p/semicomplete/issues/detail?id=13#c29
+--- so put in external tool also: https://code.google.com/p/semicomplete/issues/detail?id=13#c29
+
+
+
 
