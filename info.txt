@@ -5,6 +5,33 @@ https://www.virtualmin.com/documentation/system/os/ubuntu-precise-to-trusty
 --- be aware to adapt keymap: https://code.google.com/p/semicomplete/issues/detail?id=13#c29
 --- so put in external tool also: https://code.google.com/p/semicomplete/issues/detail?id=13#c29
 
+ * terminal UI text editors: e.g. joe is a good one
+http://www.linux.org/threads/text-editors.4104/
+
+* gksu --> tool to run application as another user in gnome UI
+
+*  /usr/local --> only safe place not managed by package managers
+
+* giving users access to installed tools:
+ ls -l /etc/alternatives/ | grep java
 
 
+
+
+* SHELL info (ref: http://www.linuxfromscratch.org/blfs/view/svn/postlfs/profile.html)
+- interactive login shell 
+--- /etc/profile (and this script calls the scripts in /etc/profile.d
+--- ~/.bash_profile
+--- when exit  ~/.bash_logout
+
+- interactive non-login shell (shell program su, xterm, konsole,...)
+--- copies the parent environment
+--- ~/.bashrc
+
+- non-interactive shell: shell script
+--- environment inherited from the parent shell
+
+
+* command substitution
+--- http://wiki.bash-hackers.org/syntax/expansion/cmdsubst
 
