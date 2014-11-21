@@ -20,7 +20,7 @@ http://www.linux.org/threads/text-editors.4104/
 
 * SHELL info (ref: http://www.linuxfromscratch.org/blfs/view/svn/postlfs/profile.html)
 - interactive login shell 
---- /etc/profile (and this script calls the scripts in /etc/profile.d
+--- /etc/profile (and this script calls the scripts in /etc/profile.d)
 --- ~/.bash_profile
 --- when exit  ~/.bash_logout
 
@@ -35,3 +35,14 @@ http://www.linux.org/threads/text-editors.4104/
 * command substitution
 --- http://wiki.bash-hackers.org/syntax/expansion/cmdsubst
 
+
+* view ports used by processes: eg..
+sudo netstat -plten | grep java
+
+* change owner to chope for dir and recur inside dir
+chown -R chope /files/work
+
+* apt-get working:  
+  see https://help.ubuntu.com/community/AptGet/Howto
+* list installed packages: 
+dpkg --list | grep -i 'http'

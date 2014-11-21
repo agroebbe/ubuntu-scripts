@@ -90,7 +90,8 @@ ps -eaf | grep “java” # java process list
 
 hadoop_examples_jar=$( (find $HADOOP_HOME/ | grep examples | grep -v doc | grep -v data | sort | head -n1) ) # note the inner () to have a subshell for the sort command
 
-
+# see it in action:
+# http://ubuntu:8088/cluster/cluster
 
 
 # http://www.michael-noll.com/tutorials/running-hadoop-on-ubuntu-linux-single-node-cluster/
