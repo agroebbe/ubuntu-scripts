@@ -29,6 +29,7 @@ Sys.setenv(LD_LIBRARY_PATH = paste(Sys.getenv("JAVA_LD_LIBRARY_PATH"),":",Sys.ge
 # !! sometimes sudio "R CMD javareconf -e"  is needed BEFORE starting RStudio...
 
 Sys.getenv("LD_LIBRARY_PATH")
+Sys.getenv("JAVA_LD_LIBRARY_PATH")
 
 install.packages("rJava") # sometimes restart is need of this due to network IO
 
